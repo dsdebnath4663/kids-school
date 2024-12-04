@@ -159,23 +159,25 @@ h6,
 .header-carousel::before,
 .header-carousel::after,
 .page-header::before,
-.page-header::after {
+.carousel-inner::after,
+.carousel-inner::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 10px;
   top: 0;
   left: 0;
-  background: url(../assets/photos/bg-header-top.png) center center repeat-x;
+  background: url(../component/assets/photos/bg-header-top.png) center center
+    repeat-x;
   z-index: 1;
 }
 
-.header-carousel::after,
-.page-header::after {
+.carousel-inner::after {
   height: 19px;
   top: auto;
   bottom: 0;
-  background: url(../assets/photos/bg-header-bottom.png) center center repeat-x;
+  background: url(../component/assets/photos/bg-header-bottom.png) center center
+    repeat-x;
 }
 
 @media (max-width: 768px) {
@@ -233,11 +235,11 @@ h6,
   border-color: var(--primary);
 }
 
-.page-header {
+/* .page-header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../img/carousel-1.jpg) center center no-repeat;
   background-size: cover;
-}
+} */
 
 .breadcrumb-item + .breadcrumb-item::before {
   color: rgba(255, 255, 255, 0.5);
