@@ -1,0 +1,22 @@
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: #fe5d37 !important;
+  height: 38px !important;
+  width: 38px !important;
+  top: 50% !important;
+  border-radius: 50%;
+  opacity: 1 !important;
+}
+
+.custom-icon {
+  height: 38px !important;
+  width: 38px !important;
+  border-radius: 50%;
+}
+
+.custom-icon.active {
+  background-color: #103741; /* Change the background color when active */
+}
+.fontAwesomeIcon {
+  margin-top: 10px !important;
+}

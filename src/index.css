@@ -1,0 +1,65 @@
+/********** Template CSS **********/
+:root {
+  --primary: #FE5D37;
+  --light: #FFF5F3;
+  --dark: #103741;
+}
+
+.custom-spinner {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.custom-transform-element {
+  transform: translate3d(-3960px, 0px, 0px);
+  transition: 1.5s;
+  width: 7920px;
+}
+
+.custom-background {
+  background: rgba(0, 0, 0, .2);
+}
+
+.custom-spinner {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.custom-transform-element {
+  transform: translate3d(-3960px, 0px, 0px);
+  transition: 1.5s;
+  width: 7920px;
+}
+
+.custom-background {
+  background: rgba(0, 0, 0, .2);
+}
+
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    background: var(--primary) !important;
+    color: var(--light) !important;
+}
+
+#spinner {
+  background-color: rgba(0, 0, 0, 0.87) !important; /* Transparent background for the backdrop */
+  z-index: 9999; /* Ensure it's on top of other elements */
+  animation: fadeOutLoader 0.1s forwards; /* Show and hide the loader with fade effect */
+}
+
+@keyframes fadeOutLoader {
+  0% {
+    opacity: 1; /* Fully visible at the start */
+    visibility: visible;
+  }
+  99% {
+    opacity: 1; /* Remain visible until 99% of the animation duration */
+  }
+  100% {
+    opacity: 0; /* Fade out the loader */
+    visibility: hidden; /* Make the loader hidden after the fade out */
+  }
+}
