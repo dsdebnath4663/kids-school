@@ -18,7 +18,7 @@ const CallToActionSection = ({ callTooAction }) => {
               <div className="position-relative h-100">
                 <img
                   className="position-absolute w-100 h-100 rounded"
-                  src={callTooAction}
+                  src="https://img.freepik.com/free-photo/school-teacher-students-working-with-globe_23-2147885314.jpg?t=st=1733326317~exp=1733329917~hmac=012a8d7b12a566d46e7e9ec317a2e90d721cf69f422ae1574ba94cd2aa4e54de&w=996"
                   style={{
                     objectFit: "cover",
                   }}

@@ -70,41 +70,41 @@ function LandingPage() {
         "Our kindergarten provides a warm, welcoming atmosphere where every child can thrive. ",
     },
   ];
-
   const defaultTestimonials = [
     {
       id: 1,
       quote:
-        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
-      clientName: "Client Name 1",
-      profession: "Profession 1",
-      image: testimonial1,
+        "We are extremely proud of how well our son is performing at school. His teachers speak highly of his curiosity and dedication to learning. Keep shining, beta!",
+      clientName: "Rajesh Kumar",
+      profession: "Software Engineer",
+      image: "https://img.freepik.com/free-photo/worldface-pakistani-guy-white-background_53876-146312.jpg",
     },
     {
       id: 2,
       quote:
-        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
-      clientName: "Client Name 2",
-      profession: "Profession 2",
-      image: testimonial2,
+        "Our daughter’s progress in school has been remarkable. She’s always eager to learn and improve, and it makes us so proud to see her excel. Keep up the hard work, beta!",
+      clientName: "Priya Sharma",
+      profession: "Doctor",
+      image: "https://img.freepik.com/free-photo/front-view-man-ambulance-car_23-2149478476.jpg",
     },
     {
       id: 3,
       quote:
-        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
-      clientName: "Client Name 3",
-      profession: "Profession 3",
-      image: testimonial3,
+        "As parents, we couldn’t be more thrilled with our son’s academic achievements. His commitment to his studies and his desire to always improve are truly inspiring. We are proud of you, beta!",
+      clientName: "Anjali Mehta",
+      profession: "Teacher",
+      image: "https://img.freepik.com/free-photo/close-up-portrait-woman-with-beautiful-hair-closed-eyes_23-2148286126.jpg",
     },
     {
       id: 4,
       quote:
-        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
-      clientName: "Client Name 4",
-      profession: "Profession 4",
-      image: testimonial4,
+        "Watching our daughter succeed in school has been one of the greatest joys of our lives. She’s hardworking, responsible, and always willing to go the extra mile. We couldn’t ask for more.",
+      clientName: "Vikram Singh",
+      profession: "Business Owner",
+      image: "https://img.freepik.com/free-photo/little-red-riding-hood-forest-portrait_23-2149207387.jpg",
     },
   ];
+
 
   return (
     <div className="container-xxl bg-white p-0">

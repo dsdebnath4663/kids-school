@@ -7,9 +7,9 @@ import team3 from "./assets/team-3.jpg";
 const teachers = [
   {
     id: 1,
-    name: 'John Doe',
+    name: 'Arjun Verma',
     designation: 'Math Teacher',
-    image: team1,
+    image: "https://img.freepik.com/free-photo/front-view-man-classroom_23-2150444920.jpg",
     socialLinks: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -18,9 +18,9 @@ const teachers = [
   },
   {
     id: 2,
-    name: 'Jane Smith',
+    name: 'Priya Sharma',
     designation: 'English Teacher',
-    image: team2,
+    image: "https://img.freepik.com/free-photo/vertical-photo-attractive-young-woman-standing-office-holding-books-documents_146671-16538.jpg",
     socialLinks: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -29,9 +29,9 @@ const teachers = [
   },
   {
     id: 3,
-    name: 'Emily Johnson',
+    name: 'Rajesh Gupta',
     designation: 'Science Teacher',
-    image: team3,
+    image: "https://img.freepik.com/free-photo/front-view-smiley-man-eco-friendly-wind-power-project-layout_23-2148847797.jpg",
     socialLinks: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -39,6 +39,7 @@ const teachers = [
     },
   },
 ];
+
 
 const PopularTeachers = () => {
   return (

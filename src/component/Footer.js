@@ -30,7 +30,14 @@ const Footer = () => {
     { label: 'Terms & Condition', url: '#' }
   ];
 
-  const photoGallery = [classes1, classes2, classes3, classes4, classes5, classes6];
+  const photoGallery = [
+    "https://img.freepik.com/free-photo/school-children-dressed-uniform-have-fun-play-schoolyard_8353-6640.jpg",
+    "https://img.freepik.com/free-photo/portrait-group-friends-hanging-out-outdoors-while-going-preschool-together_662251-1763.jpg?ga=GA1.1.154970172.1733322318",
+    "https://img.freepik.com/free-photo/black-white-portrait-happy-children-going-school-blurred-background-selective-focus-co_166373-7627.jpg?ga=GA1.1.154970172.1733322318",
+    "https://media.istockphoto.com/id/1148218795/photo/children-cheering-in-classroom.jpg?b=1&s=612x612&w=0&k=20&c=RePfgOPg9hoocm57A9wDTUpUkevEX4_ZoFHO9wwtz3Y=",
+    "https://media.istockphoto.com/id/1392742688/photo/back-view-shot-of-group-of-teenager-kids-in-unifrom-going-home-from-school-after-classes.jpg?b=1&s=612x612&w=0&k=20&c=SbOjfEJoSgt2u7wEnz0-JcG8U0c36THE1FMdDxN1rDM=",
+    "https://img.freepik.com/free-photo/group-school-best-friends_329181-10489.jpg?ga=GA1.1.154970172.1733322318&semt=ais_tags_boosted"
+  ];
 
   const newsletter = {
     description: 'Dolor amet sit justo amet elitr clita ipsum elitr est.',

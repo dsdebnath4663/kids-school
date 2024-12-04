@@ -39,7 +39,8 @@ const AboutSection = ({ user, aboutOne, aboutTwo, aboutThree }) => {
                 <div className="d-flex align-items-center">
                   <img
                     className="rounded-circle flex-shrink-0"
-                    src={user}
+                    src=
+                    "https://img.freepik.com/free-photo/group-children-lying-reading-grass-field_1150-3900.jpg"
                     alt=""
                     style={{ width: "45px", height: "45px" }}
                   />
@@ -56,17 +57,18 @@ const AboutSection = ({ user, aboutOne, aboutTwo, aboutThree }) => {
             className="col-lg-6 about-img wow fadeInUp"
             data-wow-delay="0.5s"
             style={{
-                visibility: "visibile",
-                animationDelay: "0.5s",
+              visibility: "visibile",
+              animationDelay: "0.5s",
               animationName: "none",
             }}
           >
             <div className="row">
               <div className="col-12 text-center">
                 <img
-                  className="img-fluid w-75 rounded-circle bg-light p-3"
-                  src={aboutOne}
-                  alt=""
+                  className="img-fluid w-100 rounded-circle bg-light p-3"
+                  src="https://img.freepik.com/free-photo/kids-having-fun-as-boy-scouts_23-2149657086.jpg?t=st=1733325558~exp=1733329158~hmac=b197fb38cddad0f122841b2bb1e9123b1301e366e62b366c85030268e5e1ebca&w=996"
+                  alt="Learn More About Our Work And Our Cultural Activities
+"
                 />
               </div>
               <div
@@ -75,7 +77,7 @@ const AboutSection = ({ user, aboutOne, aboutTwo, aboutThree }) => {
               >
                 <img
                   className="img-fluid w-100 rounded-circle bg-light p-3"
-                  src={aboutTwo}
+                  src="https://img.freepik.com/free-photo/glad-boy-showing-his-artwork_1098-1460.jpg?t=st=1733325946~exp=1733329546~hmac=6132e4a8626a0fe63de898fb128e46596961801dc52b568b5d5cd98e60317f62&w=996"
                   alt=""
                 />
               </div>
@@ -85,7 +87,7 @@ const AboutSection = ({ user, aboutOne, aboutTwo, aboutThree }) => {
               >
                 <img
                   className="img-fluid w-100 rounded-circle bg-light p-3"
-                  src={aboutThree}
+                  src="https://img.freepik.com/free-photo/young-kids-making-diy-project-from-upcycled-materials_23-2149391103.jpg?t=st=1733325571~exp=1733329171~hmac=a3f7c93e7f521ca8c52a077c8efd7bb931f7a01434bcb63f65d0709e991087af&w=996"
                   alt=""
                 />
               </div>

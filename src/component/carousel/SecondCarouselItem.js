@@ -1,13 +1,13 @@
 import React from 'react';
 
- 
-const SecondCarouselItem = ( testimonial ) => {
-  
+
+const SecondCarouselItem = (testimonial) => {
+
   return (
 
     <div className="testimonial-item bg-light rounded p-5">
       {/* <pre>{JSON.stringify(testimonial, null, 2)}</pre>  */}
-       <p className="fs-5">{testimonial.title} - This is a testimonial quote.</p>
+      <p className="fs-5">{testimonial.quote} - This is a testimonial quote.</p>
       <div className="d-flex align-items-center bg-white me-n5" style={{ borderRadius: '50px 0 0 50px' }}>
         <img
           className="img-fluid flex-shrink-0 rounded-circle"
@@ -20,7 +20,7 @@ const SecondCarouselItem = ( testimonial ) => {
           <span>{testimonial.profession || 'Profession Removed'}</span>
         </div>
         <i className="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
-      </div> 
+      </div>
     </div>
   );
 }
