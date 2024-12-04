@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-  --primary: #FE5D37;
-  --light: #FFF5F3;
+  --primary: #fe5d37;
+  --light: #fff5f3;
   --dark: #103741;
 }
 
@@ -10,7 +10,6 @@
   height: 3rem;
 }
 
-
 .custom-transform-element {
   transform: translate3d(-3960px, 0px, 0px);
   transition: 1.5s;
@@ -18,7 +17,7 @@
 }
 
 .custom-background {
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .custom-spinner {
@@ -26,7 +25,6 @@
   height: 3rem;
 }
 
-
 .custom-transform-element {
   transform: translate3d(-3960px, 0px, 0px);
   transition: 1.5s;
@@ -34,18 +32,16 @@
 }
 
 .custom-background {
-  background: rgba(0, 0, 0, .2);
-}
-
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    background: var(--primary) !important;
-    color: var(--light) !important;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #spinner {
-  background-color: rgba(0, 0, 0, 0.87) !important; /* Transparent background for the backdrop */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.87
+  ) !important; /* Transparent background for the backdrop */
   z-index: 9999; /* Ensure it's on top of other elements */
   animation: fadeOutLoader 0.1s forwards; /* Show and hide the loader with fade effect */
 }

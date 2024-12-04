@@ -1,5 +1,5 @@
-.carousel-control-next,
-.carousel-control-prev {
+.testimonialCarousel .carousel-control-next,
+.testimonialCarousel .carousel-control-prev {
   background-color: #fe5d37 !important;
   height: 38px !important;
   width: 38px !important;
@@ -8,15 +8,57 @@
   opacity: 1 !important;
 }
 
-.custom-icon {
+.testimonialCarousel .custom-icon {
   height: 38px !important;
   width: 38px !important;
   border-radius: 50%;
 }
 
-.custom-icon.active {
+.testimonialCarousel .custom-icon.active {
   background-color: #103741; /* Change the background color when active */
 }
-.fontAwesomeIcon {
-  margin-top: 10px !important;
+.testimonialCarousel .fontAwesomeIcon {
+  margin-top: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .owl-carousel-item {
+    position: relative;
+    min-height: 500px;
+  }
+  .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.belowNavbarCarousel {
+  position: relative; /* This makes the container the reference point for absolute positioning */
+  height: 100%; /* Ensure the container takes full height */
+}
+
+.belowNavbarCarousel .carousel-control-prev,
+.belowNavbarCarousel .carousel-control-next {
+  position: absolute; /* Make both buttons absolutely positioned */
+  left: 91%; /* Horizontally center the buttons */
+
+  transform: translateX(-50%); /* Offset the buttons to be exactly centered */
+  height: 45px !important;
+  width: 45px !important;
+  border-radius: 50%;
+  opacity: 1 !important;
+
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+
+.belowNavbarCarousel .carousel-control-prev {
+  top: 62%; /* Place the prev button at the top */
+}
+
+.belowNavbarCarousel .carousel-control-next {
+  top: 51%; /* Place the next button at the bottom */
 }

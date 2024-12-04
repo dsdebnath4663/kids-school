@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row, Carousel, Container } from 'react-bootstrap';
 
-function NItemsPerSlideCarousel({ itemsPerSlide = 4, colContent, testimonials }) {
+function NItemsPerSlideCarousel({ itemsPerSlide = 4, colContent, testimonials, carouselId }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeButton, setActiveButton] = useState(null); // Track the active button (next or prev)
 
@@ -65,7 +65,7 @@ function NItemsPerSlideCarousel({ itemsPerSlide = 4, colContent, testimonials })
     <Carousel
       activeIndex={activeIndex} // Binding the activeIndex state to the Carousel
       onSelect={handleSelect} // Handling the selection of a new slide
-      interval={1000} // Time interval in milliseconds for automatic slide transition
+      interval={5000} // Time interval in milliseconds for automatic slide transition
       controls={true} // Enabling the previous and next controls
       indicators={true} // Enabling the indicators (dots) below the carousel
       // pause="hover" // Pausing the carousel when the user hovers over it
@@ -76,7 +76,7 @@ function NItemsPerSlideCarousel({ itemsPerSlide = 4, colContent, testimonials })
       prevIcon={
         <span
           onClick={handlePrevClick}
-          className={`custom-icon ${activeButton === "prev" ? "active" : ""}`}
+          className={`custom-icon    ${activeButton === "prev" ? "active" : ""}`}
         >
           <FontAwesomeIcon icon={faArrowLeft} className='fontAwesomeIcon' />
         </span>
@@ -89,12 +89,14 @@ function NItemsPerSlideCarousel({ itemsPerSlide = 4, colContent, testimonials })
           <FontAwesomeIcon icon={faArrowRight} className='fontAwesomeIcon' />
         </span>
       } // Customizing the next slide icon (right arrow)
-      
+
       prevLabel="Go Back" // Label for the previous slide button
       nextLabel="Next Slide" // Label for the next slide button
       data-bs-theme="dark" // Setting the carousel theme to dark (Bootstrap 5 theme support)
       as="section" // Rendering the carousel as a <section> element (can be changed to any other element)
-      className="testimonial-carousel" // Adding a custom class for styling
+      // className="testimonial-carousel " // Adding a custom class for styling ${carouselId}
+      className={`${carouselId}`}
+
     >
       {groupedTestimonials.map((group, index) => (
         <Carousel.Item key={index}>

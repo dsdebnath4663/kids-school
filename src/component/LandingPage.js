@@ -1,8 +1,7 @@
 import carouselOne from "./assets/photos/cute-schoolgirl-uniform-holding-notepads-classroom.jpg";
 import carouselTwo from "./assets/photos/surprised-little-schoolboy-wearing-back-bag-headphones-holding-notebook-raising-pen-isolated-white.jpg";
-import carouselThree from "./assets/photos/school-children-dressed-uniform-have-fun-play-schoolyard.jpg";
+// import carouselThree from "./assets/photos/school-children-dressed-uniform-have-fun-play-schoolyard.jpg";
 import carouselFour from "./assets/photos/portrait-group-friends-hanging-out-outdoors-while-going-preschool-together.jpg";
-
 
 import user from "./assets/user.jpg";
 import aboutOne from "./assets/about-1.jpg";
@@ -18,23 +17,20 @@ import SchoolClassesSection from "./SchoolClassesSection.js";
 import Navbar from "./Navbar.js";
 import AppointmentForm from "./AppointmentForm.js";
 import PopularTeachers from "./PopularTeachers.js";
-import NItemsPerSlideCarousel from "../component/carousel/NItemsPerSlideCarousel.js"
+import NItemsPerSlideCarousel from "../component/carousel/NItemsPerSlideCarousel.js";
 import FirstCarouselItem from "./carousel/FirstCarouselItem.js";
 import SecondCarouselItem from "./carousel/SecondCarouselItem.js";
 
 import Footer from "./Footer.js";
-import testimonial1 from './assets/testimonial-1.jpg';
-import testimonial2 from './assets/testimonial-2.jpg';
-import testimonial3 from './assets/testimonial-3.jpg';
-import testimonial4 from './assets/testimonial-3.jpg';
+import testimonial1 from "./assets/testimonial-1.jpg";
+import testimonial2 from "./assets/testimonial-2.jpg";
+import testimonial3 from "./assets/testimonial-3.jpg";
+import testimonial4 from "./assets/testimonial-3.jpg";
 import { Carousel } from "react-bootstrap";
 import { useEffect, useState } from "react";
 // import '../App.css'
 
 function LandingPage() {
-
-
-
   // Initialize state variable for window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -62,62 +58,53 @@ function LandingPage() {
   // Array of carousel items
   const testimonials = [
     {
-      image: carouselOne,
-      title: "A Safe and Nurturing Environment for Your Child",
-      description:
-        "Our kindergarten provides a warm, welcoming atmosphere where every child can thrive. With a focus on creativity and exploration, we help children build a love for learning that lasts a lifetime.",
-    },
-    {
-      image: carouselTwo,
-      title: "Empowering the Next Generation of Learners",
-      description:
-        "We are committed to shaping the future by offering a curriculum that fosters critical thinking, collaboration, and emotional growth. Let your child develop the skills they need to succeed in a rapidly changing world.",
-    },
-    {
-      image: carouselThree,
-      title: "Where Every Child’s Potential is Recognized",
-      description:
-        "At our kindergarten, every child is seen as unique and capable. Our experienced educators tailor their teaching to each child's needs, helping them grow socially, emotionally, and academically.",
-    },
-    {
       image: carouselFour,
       title: "Building Strong Foundations for Lifelong Success",
       description:
-        "We provide a solid foundation for learning with engaging, hands-on activities that stimulate curiosity and growth. Your child will develop essential life skills while having fun in a safe, supportive environment.",
-    }
+        "We provide a solid foundation for learning with engaging, hands-on activities that stimulate curiosity and growth. ",
+    },
+    {
+      image: carouselOne,
+      title: "A Safe and Nurturing Environment for Your Child",
+      description:
+        "Our kindergarten provides a warm, welcoming atmosphere where every child can thrive. ",
+    },
   ];
 
   const defaultTestimonials = [
     {
       id: 1,
-      quote: 'Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...',
-      clientName: 'Client Name 1',
-      profession: 'Profession 1',
+      quote:
+        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
+      clientName: "Client Name 1",
+      profession: "Profession 1",
       image: testimonial1,
     },
     {
       id: 2,
-      quote: 'Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...',
-      clientName: 'Client Name 2',
-      profession: 'Profession 2',
+      quote:
+        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
+      clientName: "Client Name 2",
+      profession: "Profession 2",
       image: testimonial2,
     },
     {
       id: 3,
-      quote: 'Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...',
-      clientName: 'Client Name 3',
-      profession: 'Profession 3',
+      quote:
+        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
+      clientName: "Client Name 3",
+      profession: "Profession 3",
       image: testimonial3,
     },
     {
       id: 4,
-      quote: 'Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...',
-      clientName: 'Client Name 4',
-      profession: 'Profession 4',
+      quote:
+        "Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet...",
+      clientName: "Client Name 4",
+      profession: "Profession 4",
       image: testimonial4,
     },
   ];
-
 
   return (
     <div className="container-xxl bg-white p-0">
@@ -137,7 +124,12 @@ function LandingPage() {
       {/* <!-- Spinner End --> */}
 
       <Navbar />
-      <NItemsPerSlideCarousel itemsPerSlide={1} colContent={FirstCarouselItem} testimonials={testimonials} />
+      <NItemsPerSlideCarousel
+        itemsPerSlide={1}
+        colContent={FirstCarouselItem}
+        testimonials={testimonials}
+        carouselId="belowNavbarCarousel"
+      />
 
       <FacilitiesSection />
       <AboutSection
@@ -173,8 +165,12 @@ function LandingPage() {
           </div>
 
           {/* <TestimonialsCarousel /> */}
-          <NItemsPerSlideCarousel itemsPerSlide={colSize} colContent={SecondCarouselItem} testimonials={defaultTestimonials} />
-
+          <NItemsPerSlideCarousel
+            itemsPerSlide={colSize}
+            colContent={SecondCarouselItem}
+            testimonials={defaultTestimonials}
+            carouselId="testimonialCarousel"
+          />
         </div>
       </div>
       {/* <!-- Testimonial End --> */}
